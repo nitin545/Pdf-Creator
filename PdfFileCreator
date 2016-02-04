@@ -1,13 +1,10 @@
 
 public void PdfFileCreator()
 {
- string content = "This is  a text";
+
             string filename = "mpt.pdf";
             Document doc = new Document();
             PdfPTable tableLayout = new PdfPTable(4);
-
-            
-
             byte[] fileBytes = System.Text.Encoding.UTF8.GetBytes(content.ToCharArray());
 
             // create a file with the given filename in the local folder; replace any existing file with the same name
